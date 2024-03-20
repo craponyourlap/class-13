@@ -18,6 +18,7 @@ public class generics_using_maps {
 		Iterator<Map.Entry<Integer, String>> itr = set.iterator();
 		while(itr.hasNext()) {
 			Map.Entry<Integer, String> e = itr.next();//no need to typecast he says
+			//Map.Entry e = itr.next() <- this the original code but i think he fucked
 			System.out.println(e.getKey()+" "+e.getValue());
 		}
 	}
